@@ -1,0 +1,351 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header {
+    height: 85vh;
+    background-color: #E2E2E2;
+    color: #222;
+}
+
+.logo img {
+    width: 14%;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+nav {
+    background-color: #E2E2E2;
+}
+
+nav .container {
+    position: relative;
+    height: 15vh;
+    padding: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.hamb{
+    cursor: pointer;
+    z-index: 999999999
+}
+
+.hamb:hover .line{
+    background-color: #007bff;
+}
+
+
+
+.point{
+    height: 0px;
+    width: 1150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -85%;
+    right: 0%;
+    background-color: #111;
+    overflow: hidden;
+}
+
+.point h1{
+    text-align: center;
+    display: none;
+}
+
+.point h1 a{
+    color: #CCC;
+}
+
+.point h1 a:hover{
+    color: #007bff;
+}
+
+.hamb:hover .point{
+    height: 110vh;
+    -webkit-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    border-radius: 0 0 10% 10%;
+    z-index: 99;
+} 
+
+.hamb:hover .point h1{
+    display: block;
+    margin: 140px 0 30px 0;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: #111;
+    margin: 5px;
+}
+
+nav ul {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+nav ul li:nth-child(1):hover,
+nav ul li:nth-child(2):hover,
+nav ul li:nth-child(3):hover,
+nav ul li:nth-child(4):hover {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
+nav ul li a {
+    font-size: 23px;
+    padding: 20px 15px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+}
+
+.content .left {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 51%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.content .left h3 {
+    font-size: 32px;
+}
+
+.content .left h3 span {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.content .left h1 {
+    font-size: 55px;
+}
+
+.content .left p {
+    font-size: 20px;
+}
+
+.content .left p span {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+ul.option {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 42%;
+    left: 26%;
+    -webkit-transform: translate(-42%, -50%);
+    transform: translate(-42%, -50%);
+}
+
+ul.option li {
+    position: absolute;
+    list-style: none;
+    width: 0px;
+    text-align: center;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
+ul.option li:nth-child(1) {
+    z-index: 4;
+}
+
+ul.option li:nth-child(2) {
+    z-index: 3;
+}
+
+ul.option li:nth-child(3) {
+    z-index: 2;
+}
+
+ul.option li:nth-child(4) {
+    z-index: 1;
+}
+
+ul.option:hover li:nth-child(2) {
+    margin: -105px 0 0 80px;
+}
+
+ul.option:hover li:nth-child(3) {
+    margin: -175px 0 0 190px;
+}
+
+ul.option:hover li:nth-child(4) {
+    margin: -220px 0 0 315px;
+}
+
+
+
+ul.option li .check {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#333));
+    background: linear-gradient(#000, #333);
+    border-radius: 50%;
+    margin: 10px auto 0;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 1;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ul.option li .check:hover {
+    color: #007bff;
+}
+
+/*    color: rgba(0, 176, 255, 1);*/
+
+ul.social {
+    list-style: none;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    -webkit-transform: translate(-20%, -45%);
+    transform: translate(-20%, -45%);
+    min-width: 250px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 20px;
+    text-align: center;
+}
+
+ul.social li {
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 60px;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    overflow: hidden;
+}
+
+ul.social li:hover {
+    width: 200px;
+}
+
+ul.social li:nth-child(1):hover span,
+ul.social li:nth-child(1):hover i {
+    color: #0A66C2;
+}
+
+ul.social li:nth-child(2):hover span,
+ul.social li:nth-child(2):hover i {
+    color: #973193;
+}
+
+ul.social li:nth-child(3):hover span,
+ul.social li:nth-child(3):hover i {
+    color: #1DA1F2;
+}
+
+ul.social li:nth-child(4):hover span,
+ul.social li:nth-child(4):hover i {
+    color: #1A1E22;
+}
+
+ul.social li:nth-child(5):hover span,
+ul.social li:nth-child(5):hover i {
+    color: #215595;
+}
+
+ul.social li a i {
+    font-size: 25px;
+}
+
+ul.social li span {
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+
+
+
+/*
+#0A66C2 in
+#973193 inst
+#1DA1F2 twi
+#0083C5 tele
+#215595 face
+
+*/
